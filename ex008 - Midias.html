@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir essa imagem em vários dispositivos ou em tamanhos 
+        de tela diferentes
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagem/p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="Imagem/m.jpg" type="image/jpg">
+        <img src="Imagem/g.jpg" alt="imagem flexível">
+    </picture>
+
+    <h1>Audios</h1>
+    <p>Escute esse clássico dos anos 80</p>
+    <audio preload="metadata" controls>
+    <source src="Audio/musica.mp3" type="audio/mpeg">
+    <source src="Audio/musica.wav" type="audio/wav">
+    <source src="Audio/musica.ogg" type="audio/ogg">   
+    <p>Seu dispositivo não é compatível <a href="Audio/musica.mp3" download="musica.mp3" name="Musica">clique aqui</a> para baixar</p>
+    </audio>
+
+    <h1>Vídeos</h1>
+    <h2>Hospedados localmente</h2>
+    <video src="video/Videos_low.m4v" width="500" poster="Imagem/m.jpg" rel="external" controls></video>
+    <h2>Video externo</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
