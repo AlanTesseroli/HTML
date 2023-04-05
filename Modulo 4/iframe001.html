@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iframe</title>
+<style>
+    iframe{
+        width: 90%;
+        height: 400px;
+    }
+
+</style>
+
+</head>
+<body>
+    <h1>Testando o uso de iframe</h1>
+    <p>Acessando o site do CursoemVideo para aprender a programar</p>
+        
+        <iframe src="https://www.cursoemvideo.com/curso/python-3-mundo-1/" frameborder="0"></iframe>
+
+    <h1>Navegando por iframe</h1>
+        <ul>
+            <li><a href="https://www.cursoemvideo.com/curso/curso-de-algoritmo/" target="frame">Site 1</a></li>
+            <li><a href="https://www.cursoemvideo.com/curso/java-basico/" target="frame">Site 2</a></li>
+            <li><a href="https://www.cursoemvideo.com/curso/php-basico/" target="frame">Site 3</a></li>
+        </ul>        
+
+        <iframe srcdoc="   <h1>Escolha uma das opções acima</h1>" frameborder="0" name="frame"> <p>Infelizmente seu dispositivo não supota iframes</p></iframe>
+
+    <h1>Tornando iframe seguro</h1>
+    <iframe src="https://www.cursoemvideo.com/curso/python-3-mundo-1/" frameborder="0" sandbox="sandox" referrerpolicy="no-referrer"></iframe>
+
+
+</body>
+</html>
